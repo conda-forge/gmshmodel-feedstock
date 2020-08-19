@@ -1,5 +1,5 @@
 {% set name = "gmshModel" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
-  sha256: 7d19bdde7207a91d00b434b1385607975f2e8aef4e0a16c31f4e56fff56aef45
+  sha256: 0f09fd7cdca3dc66fec88bd854c4c9a2ccf496e7dabfb7ac83cf0eb0d9daad1d
 
 build:
   number: 0
@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/NEFM-TUDresden/GmshModel
   summary: A mesh modeling interface to the Gmsh-Python-API
-  license:  GPL-3.0-or-later
+  license: GPL-3.0-or-later
   license_file: LICENSE
   license_family: GPL
   doc_url: https://gmshmodel.readthedocs.io/
