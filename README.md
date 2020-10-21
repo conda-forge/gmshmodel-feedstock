@@ -5,11 +5,13 @@ Home: https://github.com/NEFM-TUDresden/GmshModel
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gmshmodel-feedstock/blob/master/LICENSE.txt)
 
 Summary: A mesh modeling interface to the Gmsh-Python-API
 
+Development: https://github.com/NEFM-TUDresden/GmshModel
 
+Documentation: https://gmshmodel.readthedocs.io/
 
 Current build status
 ====================
