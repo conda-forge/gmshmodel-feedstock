@@ -22,6 +22,7 @@ requirements:
     - python >=3.5
     - numpy
     - gmsh
+    - python-gmsh
     - meshio >=4,<=5.1.2
     - pyvista >=0.24.1
 
