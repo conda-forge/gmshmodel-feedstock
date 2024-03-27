@@ -1,5 +1,5 @@
 {% set name = "gmshModel" %}
-{% set version = "1.0.15" %}
+{% set version = "1.0.17" %}
 
 
 package:
@@ -24,7 +24,7 @@ requirements:
     - pythonocc-core >=7.4
     - python-gmsh
     - pyvista >=0.24.1
-    - meshio >=4
+    - meshio >=4, <=5.1.2
     - python >=3.5
 
 test:
