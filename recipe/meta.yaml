@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
-  sha256: cadc23f3c0f10e84bbdc66743fc22d33436e2987208838585c4c11a0426a2853
+  sha256: 3ef9d59750acc7c73d5322ed5fb16e056147808691a762a890bf214c1ddd90c1
 
 build:
   number: 0
