@@ -1,13 +1,17 @@
 About gmshmodel-feedstock
 =========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gmshmodel-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gmshmodel-feedstock4Update-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/NEFM-TUDresden/GmshModel
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Summary: A mesh modeling interface to the Gmsh-Python-API
+
+Development: https://github.com/NEFM-TUDresden/GmshModel
+
+Documentation: https://gmshmodel.readthedocs.io/
 
 Current build status
 ====================
@@ -15,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10509&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gmshmodel-feedstock?branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gmshmodel-feedstock4Update-feedstock?branchName=main">
       </a>
     </td>
   </tr>
