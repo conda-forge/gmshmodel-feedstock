@@ -43,14 +43,6 @@ setup_conda_rc "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
 source run_conda_forge_build_setup
 
-
-# Install the yum requirements defined canonically in the
-# "recipe/yum_requirements.txt" file. After updating that file,
-# run "conda smithy rerender" and this line will be updated
-# automatically.
-/usr/bin/sudo -n yum install -y mesa-libGLU mesa-libgl mesa-libGL libglu1-mesa
-
-
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
