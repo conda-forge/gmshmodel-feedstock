@@ -1,5 +1,6 @@
-{% set name = "gmshmodel" %}
-{% set version = "1.0.17" %}
+{% set name = "gmshModel" %}
+{% set version = "1.0.18" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,37 +8,37 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
-  sha256: 3ef9d59750acc7c73d5322ed5fb16e056147808691a762a890bf214c1ddd90c1
+  sha256: 730556a16999490e42b97777ac355c4b61f26dee984ff4901f4b05288f6ed292
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.5
     - pip
-  run:
     - python >=3.5
+  run:
     - numpy
-    - gmsh
-    - meshio >=4,<=5.1.2
+    - pythonocc-core >=7.4
+    - python-gmsh
     - pyvista >=0.24.1
+    - meshio[all] >=4,<=5.1.2
+    - python >=3.5
 
 test:
   imports:
     - gmshModel
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/NEFM-TUDresden/GmshModel
   summary: A mesh modeling interface to the Gmsh-Python-API
-  license: GPL-3.0
+  license:  GPL-3.0-or-later
   license_file: LICENSE
+  license_family: GPL
+  doc_url: https://gmshmodel.readthedocs.io/
+  dev_url: https://github.com/NEFM-TUDresden/GmshModel
 
 extra:
   recipe-maintainers:
