@@ -1,4 +1,3 @@
 mesa-libGLU
 mesa-libgl
-mesa-libGL
 libglu1-mesa
