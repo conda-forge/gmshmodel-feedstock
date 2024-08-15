@@ -1,5 +1,5 @@
 {% set name = "gmshModel" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
-  sha256: 09e0d32f679a2781717aecb76171212ad7d5166404a14b1aaa45e97e702d6362
+  sha256: e7c59982bc520fef6a5f5f9202612b715995685bb639a8e01042c99e12ee14e0
 
 build:
   number: 0
