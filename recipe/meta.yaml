@@ -7,27 +7,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/gmshModel-{{ version }}.tar.gz
   sha256: e7c59982bc520fef6a5f5f9202612b715995685bb639a8e01042c99e12ee14e0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - numpy
     - pythonocc-core >=7.4
     - python-gmsh
     - pyvista >=0.24.1
     - meshio[all] >=4,<=5.1.2
-    - python >=3.5
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - gmshModel
 
